@@ -1,0 +1,78 @@
+.container {
+  overflow: hidden;
+  display: flex;
+  width: 90%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  border: 2px solid white;
+  border-radius: 10%;
+  padding: 2rem;
+}
+
+.perfil {
+  margin-top: 2rem;
+  margin-left: 12rem;
+  width: 15rem;
+  height: 15rem;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.perfilImg {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.subtitulo {
+  text-decoration: underline;
+  margin-left: 14rem;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.descricao {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-left: 1rem;
+  text-align: center;
+  max-width: 600px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.footer{
+  
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footer a {
+  color:#fff;
+  height: 5%;
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.icon:hover {
+  transition: .3s;
+  color: #000;
+}
+
+

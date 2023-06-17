@@ -1,6 +1,7 @@
 import styles from './Navbar.module.css';
 import logoCaio from '../assets/logoCaio.png';
 import { FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa';
+import { Inicio } from './Inicio.jsx';
 
 export function Navbar() {
   return (
@@ -10,9 +11,9 @@ export function Navbar() {
       </div>
 
       <div className={styles.ancoras}>
-        <a href="#">Inicio</a>
-        <a href="#">Projetos</a>
-        <a href="#">Contato</a>
+        <a href="#Inicio">Inicio</a>
+        <a href="#Projetos">Projetos</a>
+        <a href="#Contato">Contato</a>
       </div>
 
       <footer className={styles.footer}>
