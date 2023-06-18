@@ -18,10 +18,15 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   background-color: transparent;
+  -webkit-font-smoothing: antialiased;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
 
+
+@media screen {
+  
+}
 

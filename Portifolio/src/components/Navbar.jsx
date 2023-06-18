@@ -1,6 +1,7 @@
 import styles from './Navbar.module.css';
 import logoCaio from '../assets/logoCaio.png';
 import { FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa';
+// eslint-disable-next-line no-unused-vars
 import { Inicio } from './Inicio.jsx';
 
 export function Navbar() {

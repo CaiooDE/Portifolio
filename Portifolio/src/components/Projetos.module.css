@@ -1,3 +1,156 @@
-.container{
+.container {
+  width: 90vw;
   height: 100vh;
+  margin-left: 10%;
 }
+
+.content {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+}
+
+.timeline li svg {
+  font-size: 30px;
+}
+
+.timeline li span {
+  margin-top: 10px;
+}
+
+.card1, .card2, .card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 25rem;
+  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card1, .card2{
+  margin-right: 1rem;
+}
+
+.card1 p, .card2 p, .card3 p{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 16px;
+  margin-top: 0.5rem;
+}
+
+.card1 h3, .card2 h3, .card3 h3{
+  text-decoration: underline;
+}
+
+.card1 h3,p,.card2 h3,p,.card3 h3,p {
+  text-align: center;
+}
+
+.card1:hover,.card2:hover, .card3:hover {
+  transform: translateY(-5px);
+}
+
+.card1 img, .card2 img, .card3 img {
+  margin-top: 0.25rem;
+  width: 14rem;
+  height: 10rem;
+  border-radius: 16px;
+}
+
+.card_content {
+  padding: 1.25rem;
+}
+
+.card_content h3 {
+  margin-top: 0;
+}
+
+.card_content p {
+  margin-bottom: 0;
+}
+
+.btn {
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.projetos_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.conhecimento {
+  margin-top: 3rem;
+}
+
+.htmlicon, .jsicon, .reacticon, .pythonicon, .cicon, .cssicon, .nodeicon, .giticon{
+  transition: 0.5s;
+}
+
+.htmlicon:hover{
+  color: #E34C26;
+}
+
+.jsicon:hover{
+  color: #F0DB4F;
+ }
+
+ .reacticon:hover{
+  color: #61DAFB;
+ }
+
+ .pythonicon:hover{
+  color: #3776AB;
+ }
+
+ .cicon:hover{
+  color: #00599C;
+ }
+
+ .cssicon:hover{
+  color: #1572B6;
+ }
+
+ .nodeicon:hover{
+  color: #339933;
+ }
+
+ .giticon:hover{
+  color: #F05032;
+ }
+

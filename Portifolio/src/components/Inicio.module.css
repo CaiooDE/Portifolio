@@ -14,8 +14,8 @@
   display: flex;
   flex-direction: column;
   margin-left: 2rem;
-  border: 2px solid white;
-  border-radius: 10%;
+  /*border: 2px solid white;*/
+  border-radius: 16px;
   padding: 2rem;
 }
 
@@ -25,14 +25,13 @@
   width: 15rem;
   height: 15rem;
   background: transparent;
-  border-radius: 50%;
 }
 
 .perfilImg {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 120px;
   object-fit: cover;
 }
 
@@ -41,14 +40,14 @@
   margin-left: 14rem;
   font-size: 1rem;
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   margin-top: 1rem;
 }
 
 .descricao {
   background: rgba(0, 0, 0, 0.5);
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 16px;
   margin-left: 1rem;
   text-align: center;
   max-width: 600px;
@@ -76,3 +75,9 @@
 }
 
 
+@media (max-width: 1366px) {
+  .descricao{
+    line-height: 1.3;
+    padding: 1rem;
+  }
+}
