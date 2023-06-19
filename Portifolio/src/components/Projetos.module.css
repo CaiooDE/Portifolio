@@ -36,7 +36,9 @@
   margin-top: 10px;
 }
 
-.card1, .card2, .card3 {
+.card1,
+.card2,
+.card3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,30 +52,44 @@
   cursor: pointer;
 }
 
-.card1, .card2{
+.card1,
+.card2 {
   margin-right: 1rem;
 }
 
-.card1 p, .card2 p, .card3 p{
+.card1 p,
+.card2 p,
+.card3 p {
   background: rgba(0, 0, 0, 0.5);
   padding: 0.5rem;
   border-radius: 16px;
   margin-top: 0.5rem;
 }
 
-.card1 h3, .card2 h3, .card3 h3{
+.card1 h3,
+.card2 h3,
+.card3 h3 {
   text-decoration: underline;
 }
 
-.card1 h3,p,.card2 h3,p,.card3 h3,p {
+.card1 h3,
+p,
+.card2 h3,
+p,
+.card3 h3,
+p {
   text-align: center;
 }
 
-.card1:hover,.card2:hover, .card3:hover {
+.card1:hover,
+.card2:hover,
+.card3:hover {
   transform: translateY(-5px);
 }
 
-.card1 img, .card2 img, .card3 img {
+.card1 img,
+.card2 img,
+.card3 img {
   margin-top: 0.25rem;
   width: 14rem;
   height: 10rem;
@@ -118,39 +134,76 @@
   margin-top: 3rem;
 }
 
-.htmlicon, .jsicon, .reacticon, .pythonicon, .cicon, .cssicon, .nodeicon, .giticon{
+.htmlicon,
+.jsicon,
+.reacticon,
+.pythonicon,
+.cicon,
+.cssicon,
+.nodeicon,
+.giticon {
   transition: 0.5s;
 }
 
-.htmlicon:hover{
-  color: #E34C26;
+.htmlicon:hover {
+  color: #e34c26;
 }
 
-.jsicon:hover{
-  color: #F0DB4F;
- }
+.jsicon:hover {
+  color: #f0db4f;
+}
 
- .reacticon:hover{
-  color: #61DAFB;
- }
+.reacticon:hover {
+  color: #61dafb;
+}
 
- .pythonicon:hover{
-  color: #3776AB;
- }
+.pythonicon:hover {
+  color: #3776ab;
+}
 
- .cicon:hover{
-  color: #00599C;
- }
+.cicon:hover {
+  color: #00599c;
+}
 
- .cssicon:hover{
-  color: #1572B6;
- }
+.cssicon:hover {
+  color: #1572b6;
+}
 
- .nodeicon:hover{
-  color: #339933;
- }
+.nodeicon:hover {
+  color: #68a063;
+}
 
- .giticon:hover{
-  color: #F05032;
- }
+.giticon:hover {
+  color: #f34f29;
+}
 
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.slidescontainer {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 33.33%; /* Exibe 3 projetos por vez */
+  padding: 0.625rem;
+}
+
+.prevbutton,
+.nextbutton {
+  background-color: #f1f1f1;
+  border: none;
+  color: #000;
+  padding: 0.625rem 1.25rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.prevbutton:hover,
+.nextbutton:hover {
+  background-color: #ddd;
+}
