@@ -60,24 +60,32 @@ export function Contato() {
 
       <div className={styles.content1}>
         <h2>Entre em contato</h2>
-        <form action="enviar_email.php" method="POST">
-          <div className={styles.formgroup}>
+        <form action="https://formsubmit.co/cderrecaio@gmail.com" method="POST" id="contact-form">
+          <div className={`${styles.formgroup} form-group`}>
             <label htmlFor="name">Nome</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" className="form-control" required />
           </div>
-          <div className={styles.formgroup}>
+          <div className={`${styles.formgroup} form-group`}>
             <label htmlFor="email">E-mail</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" className="form-control" required />
           </div>
-          <div className={styles.formgroup}>
+          <div className={`${styles.formgroup} form-group`}>
             <label htmlFor="message">Mensagem</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" className="form-control" required></textarea>
           </div>
-          <div className={styles.formgroup}>
-            <input type="submit" className={styles.btn} value="Enviar" />
+          <input type="hidden" name="_next" value="http://localhost:5173/#Contato" />
+          <input type="hidden" name="_captcha" value="false" />
+          <div className={`${styles.formgroup} form-group`}>
+            <input type="submit" className={`${styles.btn} btn btn-lg btn-dark btn-block`} value="Enviar" />
           </div>
         </form>
       </div>
+
+
+
+
+
+
 
       <div className={styles.floatingAlert} style={floatingAlertStyle}>
         <div className={styles.infoBalloon}>
