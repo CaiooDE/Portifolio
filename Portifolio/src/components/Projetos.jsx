@@ -1,6 +1,7 @@
 import styles from './Projetos.module.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaPython, FaReact, FaCuttlefish, FaNodeJs } from 'react-icons/fa';
 import rede_social from '../assets/rede_social.png';
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 
 const projects = [
@@ -16,25 +17,34 @@ const projects = [
   { id: 4, name: 'Projeto 4' },
   { id: 5, name: 'Projeto 5' },
   { id: 6, name: 'Projeto 6' },
-  // Adicione mais projetos se necessário
 ];
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % projects.length);
+    setCurrentSlide((prevSlide) => {
+      const nextSlideIndex = (prevSlide + 1) % projects.length;
+      return nextSlideIndex === 0 ? prevSlide : nextSlideIndex;
+    });
   };
-
+  
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? projects.length - 1 : prevSlide - 1
+      prevSlide === 0 ? prevSlide : prevSlide - 1
     );
   };
+  
 
   return (
     <div className={styles.carousel}>
-      <button className={styles.prevbutton} onClick={prevSlide}>
+      <button
+        className={`${styles.prevbutton} ${
+          currentSlide === 0 ? styles.disabled : ''
+        }`}
+        onClick={prevSlide}
+        disabled={currentSlide === 0}
+      >
         &#10094;
       </button>
 
@@ -53,12 +63,20 @@ const Carousel = () => {
         ))}
       </div>
 
-      <button className={styles.nextbutton} onClick={nextSlide}>
+      <button
+        className={`${styles.nextbutton} ${
+          currentSlide === projects.length - 3 ? styles.disabled : ''
+        }`}
+        onClick={nextSlide}
+        disabled={currentSlide === projects.length - 3}
+      >
         &#10095;
       </button>
     </div>
   );
 };
+
+
 
 export function Projetos() {
   return (

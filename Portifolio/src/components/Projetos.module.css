@@ -52,11 +52,6 @@
   cursor: pointer;
 }
 
-.card1,
-.card2 {
-  margin-right: 1rem;
-}
-
 .card1 p,
 .card2 p,
 .card3 p {
@@ -195,9 +190,9 @@ p {
 
 .prevbutton,
 .nextbutton {
-  background-color: #f1f1f1;
+  background: rgba(0, 0, 0, 0.5);
   border: none;
-  color: #000;
+  color: #fff;
   padding: 0.625rem 1.25rem;
   font-size: 1.5rem;
   cursor: pointer;
