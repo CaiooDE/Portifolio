@@ -8,8 +8,7 @@
 
 body{
   background: rgb(2,2,126);
-  background: linear-gradient(90deg, rgba(2,2,126,1) 35%, rgba(144,144,230,1) 100%);
-}
+  background: linear-gradient(270deg, rgba(2,2,126,1) 0%, rgba(32,32,121,1) 72%, rgba(125,125,231,1) 100%);}
 
 
 body::-webkit-scrollbar {
